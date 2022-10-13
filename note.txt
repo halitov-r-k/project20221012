@@ -1,0 +1,6 @@
+Настройки базы данных
+dbUserName: user
+dbUserPassword: user
+dbName: db1
+jdbc:mariadb://localhost:3306/db1
+jdbc:mysql://localhost:3306/db1
