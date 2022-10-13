@@ -10,6 +10,7 @@ public class TestSpring {
         );
         TestBean testBean = context.getBean("testBeanId", TestBean.class);
         System.out.println(testBean.getName());
+        context.close();
 
     }
 }
