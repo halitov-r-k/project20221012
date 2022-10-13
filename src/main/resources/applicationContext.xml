@@ -6,10 +6,11 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
-
-    <bean id="testBeanId"
-          class="ru.halitov.TestBean">
+<!--
+    <bean id="testBeanId" class="ru.halitov.TestBean">
         <constructor-arg value="Ruslan"/>
     </bean>
-
+-->
+  <!--  <bean id = "musicBeanId" class = "ru.halitov.Music.RockMusic" />-->
+        <bean id = "musicBeanId" class = "ru.halitov.Music.ClassicalMusic" />
 </beans>
