@@ -1,6 +1,6 @@
-Настройки базы данных
-dbUserName: user
-dbUserPassword: user
+SELECT host, user, password, password_expired FROM mysql.user;Настройки базы данных
+dbUserName: user1
+dbUserPassword: user1
 dbName: db1
 jdbc:mariadb://localhost:3306/db1
 jdbc:mysql://localhost:3306/db1

@@ -11,6 +11,9 @@
         <constructor-arg value="Ruslan"/>
     </bean>
 -->
-  <!--  <bean id = "musicBeanId" class = "ru.halitov.Music.RockMusic" />-->
-        <bean id = "musicBeanId" class = "ru.halitov.Music.ClassicalMusic" />
+    <bean id = "musicBeanId" class = "ru.halitov.Music.RockMusic" />
+     <!--   <bean id = "musicBeanId" class = "ru.halitov.Music.ClassicalMusic" />-->
+        <bean id = "musicPlayerBeanId" class=" ru.halitov.Music.MusicPlayer">
+                <constructor-arg ref="musicBeanId"/>
+        </bean>
 </beans>
