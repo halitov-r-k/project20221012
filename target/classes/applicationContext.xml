@@ -19,7 +19,16 @@
             <property name="name" value="Some name"/>
             <property name="volume" value="50"/>
         </bean>-->
+    <!--
     <bean id = "musicPlayerBeanId" class=" ru.halitov.Music.MusicPlayer">
+        <property name="music" ref = "musicBeanId"/>
+        <property name="name" value="${musicPlayer.name}"/>
+        <property name="volume" value="${musicPlayer.volume}"/>
+    </bean>
+    -->
+
+    <bean id = "musicPlayerBeanId" class=" ru.halitov.Music.MusicPlayer" scope="prototype">
+
         <property name="music" ref = "musicBeanId"/>
         <property name="name" value="${musicPlayer.name}"/>
         <property name="volume" value="${musicPlayer.volume}"/>
