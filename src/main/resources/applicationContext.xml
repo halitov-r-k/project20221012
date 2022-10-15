@@ -7,12 +7,20 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
     <context:property-placeholder location="classpath:musicPlayer.properties"/>
-<!--
-    <bean id="testBeanId" class="ru.halitov.TestBean">
-        <constructor-arg value="Ruslan"/>
+    <bean id="testBeanId"
+          class="ru.halitov.Test.TestBean"
+          init-method="initBean"
+          destroy-method="destroyBean"
+          factory-method="getBean">
     </bean>
--->
-    <bean id = "musicBeanId" class = "ru.halitov.Music.RockMusic" />
+    <!-- <bean id="testBeanId"
+          class="ru.halitov.Test.TestBean"
+          init-method="initBean"
+          destroy-method="destroyBean"
+          factory-method="getBean">
+          <constructor-arg value="Ruslan"/>
+    </bean>-->
+   <!-- <bean id = "musicBeanId" class = "ru.halitov.Music.RockMusic" />-->
      <!--   <bean id = "musicBeanId" class = "ru.halitov.Music.ClassicalMusic" />-->
        <!-- <bean id = "musicPlayerBeanId" class=" ru.halitov.Music.MusicPlayer">
                 <property name="music" ref = "musicBeanId"/>
@@ -26,11 +34,12 @@
         <property name="volume" value="${musicPlayer.volume}"/>
     </bean>
     -->
-
+    <!--
     <bean id = "musicPlayerBeanId" class=" ru.halitov.Music.MusicPlayer" scope="prototype">
 
         <property name="music" ref = "musicBeanId"/>
         <property name="name" value="${musicPlayer.name}"/>
         <property name="volume" value="${musicPlayer.volume}"/>
     </bean>
+    -->
 </beans>

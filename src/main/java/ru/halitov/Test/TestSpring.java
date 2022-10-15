@@ -1,4 +1,4 @@
-package ru.halitov;
+package ru.halitov.Test;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -9,6 +9,7 @@ public class TestSpring {
                 "applicationContext.xml"
         );
         TestBean testBean = context.getBean("testBeanId", TestBean.class);
+        testBean.setName("RuslanH");
         System.out.println(testBean.getName());
         context.close();
 
