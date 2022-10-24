@@ -7,7 +7,7 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
     <context:property-placeholder location="classpath:musicPlayer.properties"/>
-    <context:component-scan base-package="ru.halitov.ScanBean"/>
+    <context:component-scan base-package="ru.halitov.Music"/>
     <!--
     <bean id="testBeanId"
           class="ru.halitov.Test.TestBean"
@@ -45,4 +45,6 @@
         <property name="volume" value="${musicPlayer.volume}"/>
     </bean>
     -->
+
+    <bean id ="musicPlayerId" class="ru.halitov.Music.MusicPlayer" />
 </beans>
