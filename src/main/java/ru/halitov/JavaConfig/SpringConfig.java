@@ -9,6 +9,6 @@ import org.springframework.context.annotation.PropertySource;
 @ComponentScan("ru.halitov.JavaConfig")
 @PropertySource("classpath:app.properties")
 public class SpringConfig {
-@Bean
-   public BeanTest beanTest() {return new BeanTest(); }
+/*@Bean
+   public BeanTest beanTest() {return new BeanTest(); }*/
 }
